@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardItem"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/event_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"/>
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_marginEnd="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_marginStart="5dp"
+                android:id="@+id/admin_profile_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp"
+                android:src="@drawable/cpc_icon" />
+
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/admin_profile_image"
+                android:id="@+id/admin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:linksClickable="true"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="DIU CPC"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toEndOf="@+id/admin_profile_image"
+                android:layout_below="@+id/admin_name"
+                >
+
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/post_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#555"
+                    android:text="Post Time"/>
+
+                <TextView
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_toEndOf="@+id/post_time"
+                    android:id="@+id/tv_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="|"/>
+
+                <TextView
+                    android:layout_toEndOf="@+id/tv_vertical"
+                    android:layout_below="@+id/admin_name"
+                    android:id="@+id/wing_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#555"
+                    android:text="Wing Type"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/admin_profile_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="8dp"
+                android:layout_marginBottom="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+
+
+                            <ImageView
+                                android:id="@+id/event_image"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/cpc" />
+
+
+
+
+                            <RelativeLayout
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginStart="10dp"
+                                    android:id="@+id/event_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="15sp"
+                                    android:textColor="#D52121"
+                                    android:text="Date"/>
+
+                                <TextView
+                                    android:layout_below="@+id/event_time"
+                                    android:layout_toStartOf="@+id/event_register"
+                                    android:autoLink="web"
+                                    android:textIsSelectable="true"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginEnd="10dp"
+                                    android:id="@+id/event_title"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="16sp"
+                                    android:textColor="@color/colorBlack"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="Event Title"/>
+
+
+                                <TextView
+                                    android:layout_marginTop="2dp"
+                                    android:layout_marginStart="10dp"
+                                    android:id="@+id/event_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textColor="#4FAA17"
+                                    android:layout_below="@+id/event_title"
+                                    android:text="Event Type"/>
+
+                                <Button
+                                    android:id="@+id/event_register"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="35dp"
+                                    android:text="     Register Now     "
+                                    android:textAllCaps="false"
+                                    android:layout_centerVertical="true"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_marginEnd="10dp"
+                                    android:background="@drawable/border_shape"/>
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

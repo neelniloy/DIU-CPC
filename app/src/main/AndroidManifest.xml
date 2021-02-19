@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sarker.cpc">
+
+    <application
+        android:name=".OfflineFirebase"
+        android:allowBackup="true"
+        android:icon="@drawable/cpc_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cpc_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AddEvent"
+            android:theme="@style/Theme.MyApp"/>
+        <activity android:name=".EventActivity" />
+        <activity android:name=".Career" />
+        <activity android:name=".Research" />
+        <activity android:name=".Development" />
+        <activity android:name=".ACM" />
+        <activity android:name=".WingsActivity" />
+        <activity android:name=".AdminPanel" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

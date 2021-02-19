@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+        <item
+            android:id="@+id/nav_admin_panel"
+            android:icon="@drawable/ic_admin"
+            android:title="Admin Panel" />
+        <item
+            android:id="@+id/nav_wings"
+            android:icon="@drawable/ic_wings"
+            android:title="CPC Wings" />
+        <item
+            android:id="@+id/nav_members"
+            android:icon="@drawable/ic_member"
+            android:title="Members" />
+        <item
+            android:id="@+id/nav_report_bug"
+            android:icon="@drawable/ic_bug"
+            android:title="Report a bug" />
+        <item
+            android:id="@+id/nav_check_update"
+            android:icon="@drawable/ic_check_update"
+            android:title="Check Update" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_about"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_contact"
+            android:title="Contact" />
+        <item
+            android:id="@+id/nav_faq"
+            android:icon="@drawable/ic_faq"
+            android:title="FAQ" />
+
+
+</menu>

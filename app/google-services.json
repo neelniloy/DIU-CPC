@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "942521484832",
+    "project_id": "cpc-app-e0868",
+    "storage_bucket": "cpc-app-e0868.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:942521484832:android:c329f4474090c2a0e85e45",
+        "android_client_info": {
+          "package_name": "com.sarker.cpc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "942521484832-36unvu3q9vmp5vkfqul19tff7rs1tig8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJr-nsBGQp9VfFly7Qf0tMqA3-MZq2vRw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "942521484832-36unvu3q9vmp5vkfqul19tff7rs1tig8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
